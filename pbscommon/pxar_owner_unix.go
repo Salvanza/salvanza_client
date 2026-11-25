@@ -5,6 +5,7 @@ package pbscommon
 import (
 	"os"
 	"syscall"
+	"time"
 
 	"golang.org/x/sys/unix"
 )
@@ -50,11 +51,14 @@ func chownLink(path string, uid, gid uint32) {
 // setLinkTime sets a symlink's own mtime without following it. utimensat
 // with AT_SYMLINK_NOFOLLOW exists on every Unix, but its flag value differs
 // (0x100 on Linux, 0x200 on FreeBSD, ...), so it goes through x/sys.
+// TimeToTimespec, because Timespec's fields are 32-bit on 32-bit Linux; a
+// time that does not fit there (after 2038) is left as it is.
 func setLinkTime(path string, secs int64, nanos uint32) {
-	ts := []unix.Timespec{
-		{Sec: secs, Nsec: int64(nanos)},
-		{Sec: secs, Nsec: int64(nanos)},
+	t, err := unix.TimeToTimespec(time.Unix(secs, int64(nanos)))
+	if err != nil {
+		return
 	}
+	ts := []unix.Timespec{t, t}
 	_ = unix.UtimesNanoAt(unix.AT_FDCWD, path, ts, unix.AT_SYMLINK_NOFOLLOW)
 }
 

@@ -63,7 +63,7 @@ func TestUploadChunkNoAnswer(t *testing.T) {
 	defer srv.Close()
 	defer close(release)
 	// A floor so high the answer gets only the stall time.
-	stallTimes(t, 200*time.Millisecond, 1<<40, time.Minute)
+	stallTimes(t, 200*time.Millisecond, 1<<30, time.Minute)
 
 	client := newTestClient(srv.URL, nil)
 	pt := randomChunk(t, 4096)
@@ -208,7 +208,7 @@ func TestCloseIfQuiet(t *testing.T) {
 // connection stops sending data it is. Small writes (the transport's pings)
 // do not count as sending.
 func TestWatchUploadSharedConnection(t *testing.T) {
-	stallTimes(t, 300*time.Millisecond, 1<<40, time.Minute)
+	stallTimes(t, 300*time.Millisecond, 1<<30, time.Minute)
 	a, b := net.Pipe()
 	defer b.Close()
 	go func() { _, _ = io.Copy(io.Discard, b) }()
