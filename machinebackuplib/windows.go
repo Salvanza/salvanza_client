@@ -18,14 +18,22 @@ import (
 	"golang.org/x/sys/windows"
 )
 
+// The structs below copy Windows' own layouts, where a LARGE_INTEGER is 8-byte
+// aligned on 32-bit Windows as well. 32-bit Go aligns an int64 to 4 bytes
+// only, so the padding Windows puts in front of one is written out (on 64-bit
+// it changes nothing), and the sizes are checked when compiling: see the
+// layout checks below.
+
 type DISK_EXTENT struct {
 	DiskNumber     uint32
+	_              uint32
 	StartingOffset int64 // LARGE_INTEGER in C/C++
 	ExtentLength   int64 // LARGE_INTEGER in C/C++
 }
 
 type VOLUME_DISK_EXTENTS struct {
 	NumberOfDiskExtents uint32
+	_                   uint32
 	Extents             [16]DISK_EXTENT // This is a placeholder; actual size depends on NumberOfDiskExtents
 }
 
@@ -82,9 +90,25 @@ type DRIVE_LAYOUT_INFORMATION_EX struct {
 		Mbr DRIVE_LAYOUT_INFORMATION_MBR
 		Gpt DRIVE_LAYOUT_INFORMATION_GPT
 	}*/
-	PlaceHolder    [36]byte
+	PlaceHolder    [40]byte // the union: DRIVE_LAYOUT_INFORMATION_GPT is 40 bytes
 	PartitionEntry [128]PARTITION_INFORMATION_EX
 }
+
+// Layout checks: each pair below fails to compile (a negative array length)
+// unless the size or offset is exactly Windows' (from the Windows SDK, the
+// same on 32 and 64 bit).
+var (
+	_ [unsafe.Sizeof(DISK_EXTENT{}) - 24]byte
+	_ [24 - unsafe.Sizeof(DISK_EXTENT{})]byte
+	_ [unsafe.Offsetof(VOLUME_DISK_EXTENTS{}.Extents) - 8]byte
+	_ [8 - unsafe.Offsetof(VOLUME_DISK_EXTENTS{}.Extents)]byte
+	_ [unsafe.Sizeof(PARTITION_INFORMATION_EX{}) - 144]byte
+	_ [144 - unsafe.Sizeof(PARTITION_INFORMATION_EX{})]byte
+	_ [unsafe.Offsetof(PARTITION_INFORMATION_EX{}.StartingOffset) - 8]byte
+	_ [8 - unsafe.Offsetof(PARTITION_INFORMATION_EX{}.StartingOffset)]byte
+	_ [unsafe.Offsetof(DRIVE_LAYOUT_INFORMATION_EX{}.PartitionEntry) - 48]byte
+	_ [48 - unsafe.Offsetof(DRIVE_LAYOUT_INFORMATION_EX{}.PartitionEntry)]byte
+)
 
 const IOCTL_DISK_GET_DRIVE_LAYOUT_EX = 0x00070050
 const IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS = 0x00560000
