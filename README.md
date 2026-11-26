@@ -4,6 +4,8 @@
 
 > ℹ️ The translated READMEs are made from this English README; where they differ, the English one is current.
 
+> 🌿 **Branches:** releases are built from `master`. The latest code is on the [`develop`](https://github.com/salvanza/salvanza_client/tree/develop) branch, and pull requests go there: see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 > ⚠️ **Trademark & affiliation notice.** This is an **independent community project**, not an official Proxmox product: it is **not affiliated with, endorsed by, or sponsored by Proxmox Server Solutions GmbH**. **Proxmox®** is a registered trademark of Proxmox Server Solutions GmbH in the EU, the U.S. and other countries, and it is used here **only** to describe compatibility. Following Proxmox's own trademark guidance (registered marks must not be used in product or app names, for example "XY App for Proxmox Virtual Environment" rather than "Proxmox XY App"), **the non-branded client has been renamed**: the product formerly called *Proxmox Backup Client* is now **Salvanza for Proxmox Backup Server** (Salvanza for short), a name that does not contain the Proxmox mark. See the [Proxmox media kit](https://www.proxmox.com/en/about/company-details/media-kit) for the exact rules.
 
 [![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
@@ -687,7 +689,7 @@ The **GPLv3 license remains active**, and you will still be free to fork the pro
 
 ## 🤝 Contribute
 
-Contributions are welcome, especially:
+Contributions are welcome. Pull requests go to the `develop` branch: [CONTRIBUTING.md](CONTRIBUTING.md) says how, and what to check first. We would especially like help with:
 
 1. Translations of the READMEs and the user manuals for version 2.0
 2. Async / multicore upload of chunks (multicore compression is already implemented for machine backup)

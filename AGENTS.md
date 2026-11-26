@@ -2,6 +2,8 @@
 
 This file provides essential context for agents working in this repository to avoid common mistakes and ramp up quickly.
 
+Work happens on the `develop` branch: base changes on it and open pull requests against it, never `master` (releases only). See `CONTRIBUTING.md`.
+
 ## Project Structure
 
 This is Salvanza for Proxmox Backup Server (formerly Proxmox Backup Client), a Go-based backup client for Proxmox Backup Server, module path `github.com/salvanza/salvanza_client`. Project site https://salvanza.org/, repository https://github.com/salvanza/salvanza_client. Binaries:

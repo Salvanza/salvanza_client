@@ -4,6 +4,8 @@
 
 > ℹ️ Αυτό το κείμενο είναι μετάφραση του [αγγλικού README](README.md). Όπου διαφέρουν, ισχύει το αγγλικό, που είναι πάντα ενημερωμένο.
 
+> 🌿 **Κλάδοι (branches):** οι εκδόσεις δημιουργούνται από τον κλάδο `master`. Ο πιο πρόσφατος κώδικας βρίσκεται στον κλάδο [`develop`](https://github.com/salvanza/salvanza_client/tree/develop), και εκεί υποβάλλονται τα pull requests: δείτε το [CONTRIBUTING.md](CONTRIBUTING.md).
+
 > ⚠️ **Σημείωση για τα εμπορικά σήματα και τη σχέση με την Proxmox.** Αυτό είναι ένα **ανεξάρτητο κοινοτικό έργο** και όχι επίσημο προϊόν της Proxmox: **δεν συνδέεται με την Proxmox Server Solutions GmbH, ούτε εγκρίνεται ή χρηματοδοτείται από αυτήν**. Το **Proxmox®** είναι σήμα κατατεθέν της Proxmox Server Solutions GmbH στην ΕΕ, στις ΗΠΑ και σε άλλες χώρες, και χρησιμοποιείται εδώ **μόνο** για να περιγράψει τη συμβατότητα. Σύμφωνα με τις οδηγίες της ίδιας της Proxmox για τα εμπορικά σήματα (τα κατατεθέντα σήματα δεν πρέπει να χρησιμοποιούνται σε ονόματα προϊόντων ή εφαρμογών, για παράδειγμα «XY App for Proxmox Virtual Environment» αντί για «Proxmox XY App»), **το πρόγραμμα-πελάτης χωρίς επωνυμία μετονομάστηκε**: το προϊόν που παλαιότερα ονομαζόταν *Proxmox Backup Client* ονομάζεται πλέον **Salvanza for Proxmox Backup Server** (σύντομα Salvanza), ένα όνομα που δεν περιέχει το σήμα Proxmox. Οι ακριβείς κανόνες βρίσκονται στο [media kit της Proxmox](https://www.proxmox.com/en/about/company-details/media-kit).
 
 [![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)

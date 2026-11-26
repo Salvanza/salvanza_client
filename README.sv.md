@@ -4,6 +4,8 @@
 
 > ℹ️ Detta är en översättning av den [engelska README-filen](README.md). Där de skiljer sig åt är det den engelska som gäller.
 
+> 🌿 **Grenar:** utgåvor byggs från `master`. Den senaste koden finns på grenen [`develop`](https://github.com/salvanza/salvanza_client/tree/develop), och dit ska pull requests skickas: se [CONTRIBUTING.md](CONTRIBUTING.md).
+
 > ⚠️ **Meddelande om varumärken och anknytning.** Detta är ett **oberoende communityprojekt**, inte en officiell Proxmox-produkt: det är **inte anknutet till, godkänt av eller sponsrat av Proxmox Server Solutions GmbH**. **Proxmox®** är ett registrerat varumärke som tillhör Proxmox Server Solutions GmbH i EU, USA och andra länder, och används här **endast** för att beskriva kompatibilitet. I enlighet med Proxmox egna riktlinjer för varumärken (registrerade varumärken får inte användas i produkt- eller appnamn, till exempel ”XY App for Proxmox Virtual Environment” i stället för ”Proxmox XY App”) **har klienten utan varumärke bytt namn**: produkten som tidigare hette *Proxmox Backup Client* heter nu **Salvanza for Proxmox Backup Server** (kort Salvanza), ett namn som inte innehåller varumärket Proxmox. De exakta reglerna finns i [Proxmox mediakit](https://www.proxmox.com/en/about/company-details/media-kit).
 
 [![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
