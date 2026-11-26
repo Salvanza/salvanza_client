@@ -49,7 +49,7 @@ assert.deepEqual(aboutLinks({ is_default: false, brand_url: 'https://v.example/'
 // and the old fork-only keys are gone.
 const added = ['storageSelfHost', 'buyBackupStorage', 'legalWarranty', 'aboutLinkWebsite', 'aboutLinkHelp', 'aboutLinkContact']
 const removed = ['orderStorage', 'downloadPBS', 'legalAlpha', 'legalCredit']
-assert.equal(Object.keys(translations).length, 18)
+assert.equal(Object.keys(translations).length, 19)
 for (const [lang, tr] of Object.entries(translations)) {
   for (const k of added) assert.ok(tr[k], `${lang}: ${k} missing`)
   for (const k of removed) assert.equal(tr[k], undefined, `${lang}: ${k} still there`)

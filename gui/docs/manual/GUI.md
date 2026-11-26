@@ -310,7 +310,7 @@ On Linux, **Restart as administrator** (`salvanza-gui-root`) runs the GUI as roo
 
 ## 3. The window
 
-The left sidebar has **Backup**, **Restore**, **Undelete** and **Roll back**, a thin divider, then **Reports**, **Message Log** and **View Full Logs**. **Preferences**, **Help** and **About** are at the bottom. The language picker (flag) is at the top right; 18 languages are available. Dates and numbers follow the app's language; with the app in English they follow the computer's regional format (Windows' Region settings; on Linux `LC_ALL`, `LC_TIME`, then `LANG`), so a British PC shows 23/10/2026, 14:05. The status bar at the bottom shows the version ("Version v..." for a release, "Development build ..." otherwise) and a **Known Limitations** link.
+The left sidebar has **Backup**, **Restore**, **Undelete** and **Roll back**, a thin divider, then **Reports**, **Message Log** and **View Full Logs**. **Preferences**, **Help** and **About** are at the bottom. The language picker (flag) is at the top right; 19 languages are available. Dates and numbers follow the app's language; with the app in English they follow the computer's regional format (Windows' Region settings; on Linux `LC_ALL`, `LC_TIME`, then `LANG`), so a British PC shows 23/10/2026, 14:05. The status bar at the bottom shows the version ("Version v..." for a release, "Development build ..." otherwise) and a **Known Limitations** link.
 
 The menu bar:
 

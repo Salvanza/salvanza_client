@@ -36,6 +36,7 @@ function LanguageSwitcher() {
     { code: 'sk', name: 'Slovenčina', flag: 'sk' },
     { code: 'tr', name: 'Türkçe', flag: 'tr' },
     { code: 'uk', name: 'Українська', flag: 'ua' },
+    { code: 'zh', name: 'Chinese', flag: 'zhcn' },
   ]
 
   const currentLanguage = languages.find(lang => lang.code === language) || languages[0]

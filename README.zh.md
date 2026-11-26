@@ -62,7 +62,7 @@
 - **Linux 软件包**（`.deb`、`.rpm` 和 Arch），软件包名为 `salvanza`，服务名为 `salvanza.service`，包含后台服务。
 - **引导式裸机恢复 ISO**，也可以恢复到空的虚拟机中（P2V）。以 Proxmox VE 虚拟机形式备份的机器，也可以像 Proxmox VE 自己备份的任何虚拟机一样，在 Proxmox VE 中直接从 PBS 恢复。
 - **品牌版构建**：同一套二进制文件分别以 Salvanza、Nimbus Backup 和 Etitech Backup 安装程序发布，每个品牌都有自己的程序名称和设置文件夹。
-- **18 种界面语言。**
+- **19 种界面语言。**
 
 ## 🔁 从 Proxmox Backup Client 升级
 
@@ -183,7 +183,7 @@ msiexec /x Salvanza-<version>-x64.msi /quiet KEEP_CONFIG=0
 
 ### GUI
 主要功能见 [2.0 新特性](#-new-in-20)。此外还有：
-- 18 种界面语言：法语、英语、意大利语、德语、波兰语、西班牙语、保加利亚语、捷克语、希腊语、匈牙利语、拉脱维亚语、立陶宛语、荷兰语、葡萄牙语、罗马尼亚语、斯洛伐克语、土耳其语和乌克兰语
+- 19 种界面语言：法语、英语、意大利语、德语、波兰语、西班牙语、保加利亚语、捷克语、希腊语、匈牙利语、拉脱维亚语、立陶宛语、荷兰语、葡萄牙语、罗马尼亚语、斯洛伐克语、土耳其语和乌克兰语、中文
 - 文件夹或整盘的**一次性备份**；机器备份可存储为 `host` 备份，也可存储为 Proxmox VE `vm` 备份，并提供连空闲空间一起读取的**取证副本**选项
 - **恢复**：支持文件搜索（通配符、正则表达式、完整路径）、选择性恢复、NTFS/POSIX ACL、备用数据流、Windows 创建时间，以及可选的校验步骤
 - 对正在运行的备份执行 **Pause, Resume and Stop**（暂停、继续和停止），在 Windows 上也可从托盘操作，后台服务执行的备份同样适用
@@ -260,7 +260,7 @@ msiexec /x Salvanza-<version>-x64.msi /quiet KEEP_CONFIG=0
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**语言**：18 种，这里是法语、德语、意大利语、西班牙语、波兰语和乌克兰语
+**语言**：19 种，这里是法语、德语、意大利语、西班牙语、波兰语和乌克兰语
 
 </td>
 </tr>

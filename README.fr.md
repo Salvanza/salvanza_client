@@ -61,7 +61,7 @@ La version 2.0 intègre au projet un important travail sur l'interface graphique
 - **Paquets Linux** (`.deb`, `.rpm` et Arch), avec le paquet `salvanza` et le service `salvanza.service`, et le service d'arrière-plan.
 - **Une ISO de restauration bare-metal guidée**, qui restaure aussi dans une machine virtuelle vide (P2V). Une machine sauvegardée en tant que machine virtuelle Proxmox VE peut aussi être restaurée directement depuis PBS dans Proxmox VE, comme toute VM que Proxmox VE a lui-même sauvegardée.
 - **Versions de marque** : les mêmes binaires sont livrés sous forme d'installeurs Salvanza, Nimbus Backup et Etitech Backup, chacun avec ses propres noms de programmes et dossiers de paramètres.
-- **18 langues d'interface.**
+- **19 langues d'interface.**
 
 ## 🔁 Mise à niveau depuis Proxmox Backup Client
 
@@ -181,7 +181,7 @@ Exécutez en tant qu'administrateur ; code de sortie `0` = succès, `3010` = suc
 
 ### Interface graphique
 Les principales fonctionnalités sont listées dans [Nouveautés de la 2.0](#-new-in-20). En outre :
-- 18 langues d'interface : français, anglais, italien, allemand, polonais, espagnol, bulgare, tchèque, grec, hongrois, letton, lituanien, néerlandais, portugais, roumain, slovaque, turc et ukrainien
+- 19 langues d'interface : français, anglais, italien, allemand, polonais, espagnol, bulgare, tchèque, grec, hongrois, letton, lituanien, néerlandais, portugais, roumain, slovaque, turc et ukrainien, chinois
 - **Sauvegardes ponctuelles** de dossiers ou de disques entiers, et sauvegardes machine stockées en tant que `host` ou en tant que sauvegarde `vm` de Proxmox VE, avec une option de **copie forensique** qui lit aussi l'espace libre
 - **Restauration** avec recherche de fichiers (caractères génériques, expressions régulières, chemins complets), restauration sélective, ACL NTFS/POSIX, flux de données alternatifs, dates de création Windows et une passe de vérification facultative
 - **Pause, Reprendre et Arrêter** pour une sauvegarde en cours, y compris depuis la zone de notification sous Windows et pour les exécutions du service d'arrière-plan

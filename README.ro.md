@@ -62,7 +62,7 @@ Versiunea 2.0 aduce în proiect un volum mare de lucru la interfața grafică, l
 - **Pachete Linux** (`.deb`, `.rpm` și Arch), cu pachetul `salvanza` și serviciul `salvanza.service`, împreună cu serviciul de fundal.
 - **Un ISO ghidat de restaurare bare-metal**, care restaurează și într-o mașină virtuală goală (P2V). O mașină salvată ca mașină virtuală Proxmox VE poate fi restaurată și direct din PBS în Proxmox VE, ca orice VM al cărei backup l-a făcut chiar Proxmox VE.
 - **Versiuni cu marcă**: aceleași fișiere binare sunt livrate ca programe de instalare Salvanza, Nimbus Backup și Etitech Backup, fiecare cu propriile nume de programe și foldere de setări.
-- **18 limbi ale interfeței.**
+- **19 limbi ale interfeței.**
 
 ## 🔁 Actualizarea de la Proxmox Backup Client
 
@@ -183,7 +183,7 @@ Rulați cu drepturi ridicate (administrator); codul de ieșire `0` = succes, `30
 
 ### Interfața grafică
 Funcționalitățile principale sunt enumerate în [Noutăți în 2.0](#-new-in-20). În plus:
-- 18 limbi ale interfeței: franceză, engleză, italiană, germană, poloneză, spaniolă, bulgară, cehă, greacă, maghiară, letonă, lituaniană, neerlandeză, portugheză, română, slovacă, turcă și ucraineană
+- 19 limbi ale interfeței: franceză, engleză, italiană, germană, poloneză, spaniolă, bulgară, cehă, greacă, maghiară, letonă, lituaniană, neerlandeză, portugheză, română, slovacă, turcă și ucraineană, chineză
 - **Backup-uri unice** ale folderelor sau ale discurilor întregi și backup-uri de mașini stocate ca `host` sau ca backup `vm` Proxmox VE, cu opțiunea **Copie criminalistică**, care citește și spațiul liber
 - **Restaurare** cu căutare de fișiere (metacaractere, expresii regulate, căi complete), restaurare selectivă, ACL-uri NTFS/POSIX, fluxuri de date alternative, orele de creare Windows și o verificare opțională
 - **Pauză, Reia și Oprește** pentru un backup în curs, inclusiv din zona de notificare pe Windows și pentru rulările făcute de serviciul de fundal
@@ -260,7 +260,7 @@ Cele trei subcomenzi acceptă `-keyfile` și `-keyfile-passphrase` pentru instan
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Limbi**: 18, aici franceză, germană, italiană, spaniolă, poloneză și ucraineană
+**Limbi**: 19, aici franceză, germană, italiană, spaniolă, poloneză și ucraineană
 
 </td>
 </tr>
