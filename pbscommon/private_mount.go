@@ -3,7 +3,7 @@ package pbscommon
 import (
 	"bufio"
 	"fmt"
-	"path/filepath"
+	pathpkg "path"
 	"regexp"
 	"strconv"
 	"strings"
@@ -35,9 +35,11 @@ type privateMount struct {
 // findPrivateMount looks path up in mountinfo (the text of
 // /proc/self/mountinfo) and reports the private FUSE mount it is on, if it is
 // on one that euid may not enter. A folder under /run/user/<uid>/gvfs counts
-// even when nothing is mounted there (its user is logged out).
+// even when nothing is mounted there (its user is logged out). Paths are
+// Linux paths with forward slashes, so path.Clean, not filepath.Clean (which
+// turns them into backslashes when the tests run on Windows).
 func findPrivateMount(mountinfo, path string, euid int) (privateMount, bool) {
-	path = filepath.Clean(path)
+	path = pathpkg.Clean(path)
 	best := ""
 	var bestFS, bestSuper string
 	sc := bufio.NewScanner(strings.NewReader(mountinfo))
