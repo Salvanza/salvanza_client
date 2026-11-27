@@ -81,7 +81,7 @@ Version 2.0 übernimmt umfangreiche Arbeiten an der GUI, am Hintergrunddienst un
 - **Linux-Pakete** (`.deb`, `.rpm` und Arch), Paket `salvanza` und Dienst `salvanza.service`, mit dem Hintergrunddienst.
 - **Ein geführtes ISO für die Bare-Metal-Wiederherstellung**, das auch in eine leere virtuelle Maschine wiederherstellt (P2V). Eine Maschine, die als virtuelle Maschine von Proxmox VE gesichert wurde, lässt sich in Proxmox VE auch direkt aus PBS wiederherstellen, wie jede VM, die Proxmox VE selbst gesichert hat.
 - **Builds mit Branding**: Dieselben Binärdateien werden als Installer für Salvanza, Nimbus Backup und Etitech Backup ausgeliefert, jeweils mit eigenen Programmnamen und Einstellungsordnern.
-- **18 Sprachen für die Oberfläche.**
+- **19 Sprachen für die Oberfläche.**
 
 ## 🔁 Upgrade von Proxmox Backup Client
 
@@ -202,7 +202,7 @@ Mit erhöhten Rechten (Administrator) ausführen; Exit-Code `0` = Erfolg, `3010`
 
 ### GUI
 Die wichtigsten Funktionen stehen unter [Neu in 2.1](#-new-in-21) und [Neu in 2.0](#-new-in-20). Außerdem:
-- 18 Sprachen für die Oberfläche: Französisch, Englisch, Italienisch, Deutsch, Polnisch, Spanisch, Bulgarisch, Tschechisch, Griechisch, Ungarisch, Lettisch, Litauisch, Niederländisch, Portugiesisch, Rumänisch, Slowakisch, Türkisch und Ukrainisch
+- 19 Sprachen für die Oberfläche: Französisch, Englisch, Italienisch, Deutsch, Polnisch, Spanisch, Bulgarisch, Tschechisch, Griechisch, Ungarisch, Lettisch, Litauisch, Niederländisch, Portugiesisch, Rumänisch, Slowakisch, Türkisch, Ukrainisch und Chinesisch
 - **Einmalige Sicherungen** von Ordnern oder ganzen Datenträgern, und Maschinensicherungen, die als `host` oder als `vm`-Sicherung von Proxmox VE gespeichert werden, mit der Option **Forensische Kopie**, die auch freien Speicher liest
 - **Wiederherstellung** mit Dateisuche (Platzhalter, reguläre Ausdrücke, vollständige Pfade), selektiver Wiederherstellung, NTFS-/POSIX-ACLs, alternativen Datenströmen, Windows-Erstellungszeiten und einem optionalen Prüfdurchlauf
 - **Pause, Fortsetzen und Stoppen** einer laufenden Sicherung, auch über den Infobereich unter Windows und für Läufe des Hintergrunddienstes
@@ -279,7 +279,7 @@ Die drei Unterbefehle nehmen `-keyfile` und `-keyfile-passphrase` für verschlü
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Sprachen**: 18, hier Französisch, Deutsch, Italienisch, Spanisch, Polnisch und Ukrainisch
+**Sprachen**: 19, hier Französisch, Deutsch, Italienisch, Spanisch, Polnisch und Ukrainisch
 
 </td>
 </tr>

@@ -79,7 +79,7 @@ Version 2.0 merges a large body of work on the GUI, the background service and t
 - **Linux packages** (`.deb`, `.rpm` and Arch), package `salvanza` and service `salvanza.service`, with the background service.
 - **A guided bare-metal restore ISO**, which also restores into an empty virtual machine (P2V). A machine backed up as a Proxmox VE virtual machine can also be restored straight from PBS in Proxmox VE, like any VM that Proxmox VE backed up itself.
 - **Branded builds**: the same binaries ship as Salvanza, Nimbus Backup and Etitech Backup installers, each with its own program names and settings folders.
-- **18 interface languages.**
+- **19 interface languages.**
 
 ## 🔁 Upgrading from Proxmox Backup Client
 
@@ -200,7 +200,7 @@ Run elevated (admin); exit code `0` = success, `3010` = success + reboot require
 
 ### GUI
 The main features are listed under [New in 2.1](#-new-in-21) and [New in 2.0](#-new-in-20). Also:
-- 18 interface languages: French, English, Italian, German, Polish, Spanish, Bulgarian, Czech, Greek, Hungarian, Latvian, Lithuanian, Dutch, Portuguese, Romanian, Slovak, Turkish and Ukrainian
+- 19 interface languages: French, English, Italian, German, Polish, Spanish, Bulgarian, Czech, Greek, Hungarian, Latvian, Lithuanian, Dutch, Portuguese, Romanian, Slovak, Turkish, Ukrainian and Chinese
 - **One-off backups** of folders or whole disks, and machine backups stored as `host` or as a Proxmox VE `vm` backup, with a **forensic copy** option that reads free space too
 - **Restore** with file search (wildcards, regular expressions, full paths), selective restore, NTFS/POSIX ACLs, alternate data streams, Windows creation times and an optional verify pass
 - **Pause, Resume and Stop** a running backup, also from the tray on Windows and for runs the background service makes
@@ -333,7 +333,7 @@ Printing a paper key, and restoring a disk image, stay in the app and in the [ba
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Languages**: 18, here French, German, Italian, Spanish, Polish and Ukrainian
+**Languages**: 19, here French, German, Italian, Spanish, Polish and Ukrainian
 
 </td>
 </tr>
