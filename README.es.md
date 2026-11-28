@@ -83,7 +83,7 @@ La versión 2.0 incorpora al proyecto un gran volumen de trabajo en la interfaz 
 - **Paquetes para Linux** (`.deb`, `.rpm` y Arch), con el paquete `salvanza` y el servicio `salvanza.service`, junto con el servicio en segundo plano.
 - **Una ISO de restauración bare-metal guiada**, que también restaura en una máquina virtual vacía (P2V). Una máquina copiada como máquina virtual de Proxmox VE también puede restaurarse directamente desde PBS en Proxmox VE, como cualquier VM que el propio Proxmox VE haya copiado.
 - **Compilaciones con marca**: los mismos binarios se distribuyen como instaladores de Salvanza, Nimbus Backup y Etitech Backup, cada uno con sus propios nombres de programa y carpetas de configuración.
-- **18 idiomas de interfaz.**
+- **19 idiomas de interfaz.**
 
 ## 🔁 Actualizar desde Proxmox Backup Client
 
@@ -204,7 +204,7 @@ Ejecútelo con privilegios elevados (administrador); código de salida `0` = éx
 
 ### Interfaz gráfica
 Las funciones principales se enumeran en [Novedades de la 2.1](#-new-in-21) y [Novedades de la 2.0](#-new-in-20). Además:
-- 18 idiomas de interfaz: francés, inglés, italiano, alemán, polaco, español, búlgaro, checo, griego, húngaro, letón, lituano, neerlandés, portugués, rumano, eslovaco, turco y ucraniano
+- 19 idiomas de interfaz: francés, inglés, italiano, alemán, polaco, español, búlgaro, checo, griego, húngaro, letón, lituano, neerlandés, portugués, rumano, eslovaco, turco, ucraniano y chino
 - **Copias de seguridad puntuales** de carpetas o de discos enteros, y copias de máquina guardadas como `host` o como copia `vm` de Proxmox VE, con una opción de **copia forense** que también lee el espacio libre
 - **Restauración** con búsqueda de archivos (comodines, expresiones regulares, rutas completas), restauración selectiva, ACL NTFS/POSIX, flujos de datos alternativos, fechas de creación de Windows y una pasada de verificación opcional
 - **Pausar, Reanudar y Detener** una copia en curso, también desde la bandeja en Windows y para las ejecuciones del servicio en segundo plano
@@ -281,7 +281,7 @@ Los tres subcomandos aceptan `-keyfile` y `-keyfile-passphrase` para instantáne
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Idiomas**: 18, aquí francés, alemán, italiano, español, polaco y ucraniano
+**Idiomas**: 19, aquí francés, alemán, italiano, español, polaco y ucraniano
 
 </td>
 </tr>

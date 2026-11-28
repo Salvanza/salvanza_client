@@ -83,7 +83,7 @@ La versione 2.0 porta nel progetto un ampio lavoro sulla GUI, sul servizio in ba
 - **Pacchetti Linux** (`.deb`, `.rpm` e Arch), con pacchetto `salvanza` e servizio `salvanza.service`, insieme al servizio in background.
 - **Una ISO di ripristino bare-metal guidata**, che ripristina anche in una macchina virtuale vuota (P2V). Una macchina di cui è stato eseguito il backup come macchina virtuale Proxmox VE può anche essere ripristinata direttamente da PBS in Proxmox VE, come qualsiasi VM di cui Proxmox VE stesso abbia eseguito il backup.
 - **Build con marchio**: gli stessi binari sono distribuiti come installer Salvanza, Nimbus Backup ed Etitech Backup, ognuno con i propri nomi di programma e le proprie cartelle delle impostazioni.
-- **18 lingue dell'interfaccia.**
+- **19 lingue dell'interfaccia.**
 
 ## 🔁 Aggiornamento da Proxmox Backup Client
 
@@ -204,7 +204,7 @@ Esegui con privilegi elevati (amministratore); codice di uscita `0` = successo, 
 
 ### GUI
 Le funzionalità principali sono elencate in [Novità della 2.1](#-new-in-21) e [Novità della 2.0](#-new-in-20). Inoltre:
-- 18 lingue dell'interfaccia: francese, inglese, italiano, tedesco, polacco, spagnolo, bulgaro, ceco, greco, ungherese, lettone, lituano, olandese, portoghese, rumeno, slovacco, turco e ucraino
+- 19 lingue dell'interfaccia: francese, inglese, italiano, tedesco, polacco, spagnolo, bulgaro, ceco, greco, ungherese, lettone, lituano, olandese, portoghese, rumeno, slovacco, turco, ucraino e cinese
 - **Backup una tantum** di cartelle o di dischi interi, e backup macchina salvati come `host` o come backup `vm` di Proxmox VE, con un'opzione di **copia forense** che legge anche lo spazio libero
 - **Ripristino** con ricerca dei file (caratteri jolly, espressioni regolari, percorsi completi), ripristino selettivo, ACL NTFS/POSIX, stream di dati alternativi, date di creazione di Windows e una verifica facoltativa
 - **Pausa, Riprendi e Ferma** per un backup in corso, anche dall'area di notifica su Windows e per le esecuzioni del servizio in background
@@ -281,7 +281,7 @@ I tre sottocomandi accettano `-keyfile` e `-keyfile-passphrase` per gli snapshot
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Lingue**: 18, qui francese, tedesco, italiano, spagnolo, polacco e ucraino
+**Lingue**: 19, qui francese, tedesco, italiano, spagnolo, polacco e ucraino
 
 </td>
 </tr>

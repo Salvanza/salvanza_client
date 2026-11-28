@@ -84,7 +84,7 @@ Version 2.0 för in en stor mängd arbete på det grafiska gränssnittet, bakgru
 - **Linux-paket** (`.deb`, `.rpm` och Arch), med paketet `salvanza` och tjänsten `salvanza.service`, inklusive bakgrundstjänsten.
 - **En guidad ISO för bare metal-återställning**, som även återställer till en tom virtuell maskin (P2V). En dator som säkerhetskopierats som en virtuell maskin i Proxmox VE kan också återställas direkt från PBS i Proxmox VE, som vilken virtuell maskin som helst som Proxmox VE själv har säkerhetskopierat.
 - **Byggen med varumärke**: samma binärfiler levereras som installationsprogram för Salvanza, Nimbus Backup och Etitech Backup, vart och ett med egna programnamn och inställningsmappar.
-- **18 gränssnittsspråk.**
+- **19 gränssnittsspråk.**
 
 ## 🔁 Uppgradera från Proxmox Backup Client
 
@@ -206,7 +206,7 @@ Kör med förhöjd behörighet (administratör); slutkod `0` = lyckades, `3010` 
 
 ### Grafiskt gränssnitt
 Huvudfunktionerna finns listade under [Nytt i 2.1](#-new-in-21) och [Nytt i 2.0](#-new-in-20). Dessutom:
-- 18 gränssnittsspråk: franska, engelska, italienska, tyska, polska, spanska, bulgariska, tjeckiska, grekiska, ungerska, lettiska, litauiska, nederländska, portugisiska, rumänska, slovakiska, turkiska och ukrainska
+- 19 gränssnittsspråk: franska, engelska, italienska, tyska, polska, spanska, bulgariska, tjeckiska, grekiska, ungerska, lettiska, litauiska, nederländska, portugisiska, rumänska, slovakiska, turkiska, ukrainska och kinesiska
 - **Engångssäkerhetskopior** av mappar eller hela diskar, och datorsäkerhetskopior lagrade som `host` eller som en `vm`-säkerhetskopia i Proxmox VE, med alternativet **Forensic copy** (kriminalteknisk kopia) som även läser ledigt utrymme
 - **Återställning** med filsökning (jokertecken, reguljära uttryck, fullständiga sökvägar), selektiv återställning, NTFS/POSIX-ACL:er, alternativa dataströmmar, skapandetider i Windows och en valfri verifieringsomgång
 - **Pause, Resume och Stop** (pausa, återuppta, stoppa) för en pågående säkerhetskopia, även från meddelandefältet i Windows och för körningar som bakgrundstjänsten gör
@@ -283,7 +283,7 @@ De tre underkommandona tar `-keyfile` och `-keyfile-passphrase` för krypterade 
 <td width="33%">
 
 [<img src="docs/screenshots/gui-languages.png" width="280">](docs/screenshots/gui-languages.png)
-**Språk**: 18, här franska, tyska, italienska, spanska, polska och ukrainska
+**Språk**: 19, här franska, tyska, italienska, spanska, polska och ukrainska
 
 </td>
 </tr>
